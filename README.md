@@ -72,9 +72,9 @@ Traditional cybersecurity detection often relies on known "signatures." This pro
 
 ## 📊 Expected Data Format
 The application expects a .csv file with (at minimum) the following columns:
-login_attempt_count: Number of attempts in a timeframe.
-session_duration: Time spent on the platform.
-user_activity_frequency: Actions performed per minute.
+- login_attempt_count: Number of attempts in a timeframe.
+- session_duration: Time spent on the platform.
+- user_activity_frequency: Actions performed per minute.
 
 ## 🧠 Logic Flow
 - Data Ingestion: User uploads an access log CSV.
