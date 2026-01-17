@@ -68,7 +68,7 @@ Traditional cybersecurity detection often relies on known "signatures." This pro
    
 3. Run the app
    ```bash
-   streamlit run app.py
+   streamlit run ITree.py
 
 ## 📊 Expected Data Format
 The application expects a `.csv` file with (at minimum) the following columns:
