@@ -77,8 +77,8 @@ session_duration: Time spent on the platform.
 user_activity_frequency: Actions performed per minute.
 
 ## 🧠 Logic Flow
-Data Ingestion: User uploads an access log CSV.
-Feature Engineering: The app calculates variance across features and selects the top 2 for 2D visualization.
-Isolation: The Isolation Forest isolates observations by randomly selecting a feature and then randomly selecting a split value.
-Scoring: Points that isolate quickly (short path lengths in the tree) are assigned a lower anomaly score (flagged as anomalies).
-Interpretation: SHAP values break down the contribution of each feature to the final outlier score.
+i - Data Ingestion: User uploads an access log CSV.
+ii - Feature Engineering: The app calculates variance across features and selects the top 2 for 2D visualization.
+iii - Isolation: The Isolation Forest isolates observations by randomly selecting a feature and then randomly selecting a split value.
+iv - Scoring: Points that isolate quickly (short path lengths in the tree) are assigned a lower anomaly score (flagged as anomalies).
+v - Interpretation: SHAP values break down the contribution of each feature to the final outlier score.
