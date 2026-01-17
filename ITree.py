@@ -54,7 +54,7 @@ def plot_decision_boundary(model, X: pd.DataFrame, features: List[str]):
 st.title("🛡️ Cybersecurity Anomaly Detection")
 st.markdown("### Unsupervised Threat Hunting using Isolation Forest")
 
-uploaded_file = st.file_uploader("Upload Access Log Dataset (CSV)", type=["csv"])
+uploaded_file = st.file_uploader("Upload 'Access-Log-Dataset.csv'", type=["csv"]")
 
 if uploaded_file:
     df = load_data(uploaded_file)
