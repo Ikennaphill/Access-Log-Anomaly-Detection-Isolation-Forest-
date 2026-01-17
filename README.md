@@ -28,7 +28,7 @@ Traditional cybersecurity detection often relies on known "signatures." This pro
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/# 🛡️ Cybersecurity Anomaly Detection System
+   git clone https://github.com/Ikennaphill/Access-Log-Anomaly-Detection-Isolation-Forest.git
 
 A high-performance, unsupervised machine learning application designed to identify suspicious patterns in access logs without requiring pre-labeled attack data.
 
@@ -61,3 +61,24 @@ Traditional cybersecurity detection often relies on known "signatures." This pro
    git clone https://github.com/Ikennaphill/Access-Log-Anomaly-Detection-Isolation-Forest.git
    cd Access-Log-Anomaly-Detection-Isolation-Forest/Access-Log-Anomaly-Detection-Isolation-Forest.git
    cd Access-Log-Anomaly-Detection-Isolation-Forest
+   
+2. **Install Dependencies**
+   ```bash
+   pip install streamlit pandas scikit-learn shap matplotlib numpy
+   
+3. Run the app
+   ```bash
+   streamlit run app.py
+
+## 📊 Expected Data Format
+The application expects a .csv file with (at minimum) the following columns:
+login_attempt_count: Number of attempts in a timeframe.
+session_duration: Time spent on the platform.
+user_activity_frequency: Actions performed per minute.
+
+## 🧠 Logic Flow
+Data Ingestion: User uploads an access log CSV.
+Feature Engineering: The app calculates variance across features and selects the top 2 for 2D visualization.
+Isolation: The Isolation Forest isolates observations by randomly selecting a feature and then randomly selecting a split value.
+Scoring: Points that isolate quickly (short path lengths in the tree) are assigned a lower anomaly score (flagged as anomalies).
+Interpretation: SHAP values break down the contribution of each feature to the final outlier score.
