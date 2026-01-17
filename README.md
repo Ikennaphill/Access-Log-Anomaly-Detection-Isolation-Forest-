@@ -58,6 +58,6 @@ Traditional cybersecurity detection often relies on known "signatures." This pro
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Ikennaphill/cyber-anomaly-detection.git
-   cd cyber-anomaly-detection/cyber-anomaly-detection.git
-   cd cyber-anomaly-detection
+   git clone https://github.com/Ikennaphill/cAccess-Log-Anomaly-Detection-Isolation-Forest.git
+   cd Access-Log-Anomaly-Detection-Isolation-Forest/Access-Log-Anomaly-Detection-Isolation-Forest.git
+   cd Access-Log-Anomaly-Detection-Isolation-Forest
